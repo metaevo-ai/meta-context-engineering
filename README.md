@@ -107,9 +107,9 @@ export ANTHROPIC_AUTH_TOKEN="$OPENROUTER_API_KEY"
 export ANTHROPIC_API_KEY=""
 
 # Set default models for Claude agent SDK
-export ANTHROPIC_DEFAULT_SONNET_MODEL="minimax/minimax-m2.1"
-export ANTHROPIC_DEFAULT_OPUS_MODEL="minimax/minimax-m2.1"
-export ANTHROPIC_DEFAULT_HAIKU_MODEL="minimax/minimax-m2.1"
+export ANTHROPIC_DEFAULT_SONNET_MODEL=
+export ANTHROPIC_DEFAULT_OPUS_MODEL=
+export ANTHROPIC_DEFAULT_HAIKU_MODEL=
 ```
 
 ## Quick Start
