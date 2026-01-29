@@ -3,6 +3,7 @@
 > **Superseding Static Harnesses with Learnable Skills for Context Optimization**
 
 [![Paper](https://img.shields.io/badge/Paper-arXiv-red)](assets/paper.pdf)
+[![Experiments](https://img.shields.io/badge/Experiments-Artifact-orange)](https://github.com/metaevo-ai/mce-artifact)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.11+-green.svg)](https://python.org)
 
@@ -26,9 +27,11 @@ MCE achieves consistent improvements across five diverse domains (finance, chemi
 - **4.8×** fewer rollouts required
 - **Dynamic context length**: 1.5K to 86K tokens based on task needs
 
+> **Reproduce experiments:** See [mce-artifact](https://github.com/metaevo-ai/mce-artifact) for code and data used in our paper.
+
 ## Why MCE?
 
-Current context engineering methods are fundamentally limited by **manually crafted harnesses**:
+Current context engineering methods are fundamentally limited by **manually crafted harnesses**, for example:
 
 - **Prompt rewriting** (GEPA) favors brevity → fails on tasks requiring detailed knowledge
 - **Additive curation** (ACE) favors verbosity → causes context bloat and overhead
@@ -74,9 +77,6 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # Install with uv
 uv sync
-
-# Or with pip
-pip install -e .
 ```
 
 ## Environment Setup
