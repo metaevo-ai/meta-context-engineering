@@ -2,7 +2,7 @@
 
 > **Superseding Static Harnesses with Learnable Skills for Context Optimization**
 
-[![Paper](https://img.shields.io/badge/Paper-arXiv-red)](assets/paper.pdf)
+[![Paper](https://img.shields.io/badge/Paper-arXiv-red)](https://arxiv.org/abs/2601.21557)
 [![Experiments](https://img.shields.io/badge/Experiments-Artifact-orange)](https://github.com/metaevo-ai/mce-artifact)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.11+-green.svg)](https://python.org)
@@ -11,6 +11,7 @@
   <img src="assets/cartoon.png" width="100%" alt="MCE Concept"/>
 </p>
 
+This repository accompanies the paper [Meta Context Engineering via Agentic Skill Evolution](https://arxiv.org/abs/2501.21557).
 **Meta Context Engineering (MCE)** is a bi-level agentic framework that co-evolves *context engineering skills* and *context artifacts*, replacing rigid CE heuristics with learnable skills that automatically discover optimal context representations and optimization procedures.
 
 ## Key Results
@@ -34,10 +35,10 @@ MCE achieves consistent improvements across five diverse domains (finance, chemi
 Current context engineering methods are fundamentally limited by **manually crafted harnesses**, for example:
 
 - **Prompt rewriting** (GEPA) favors brevity → fails on tasks requiring detailed knowledge
-- **Additive curation** (ACE) favors verbosity → causes context bloat and overhead
-- **Rigid schemas** restrict optimization to narrow, intuition-bound design spaces
+- **Additive curation** (ACE) favors verbosity, structuring context as rigid itemized lists → causes context bloat and lacks structural expressiveness
+- **Manually crafted agentic harnesses** restrict optimization to narrow, intuition-bound design spaces
 
-**MCE breaks free** by treating the *engineering strategy itself* as a learnable object:
+**MCE breaks free** by treating the *context engineering skill itself* as a learnable object:
 
 ```
 Traditional CE:  Fixed workflow → Optimized context
@@ -63,7 +64,7 @@ MCE formalizes context as a **context function** `c(x) = (F_k ∘ ... ∘ F_1)(x
 
 **Base-Level (Fully Agentic Context Optimization):**
 - Executes skills to learn from training rollouts
-- Produces context as flexible files and code
+- Produces context as files and code
 - No structural constraints on context representation
 
 ## Installation
@@ -165,13 +166,22 @@ uv run python -m mce.main \
     --val-limit 20                         # Validation samples
 ```
 
-<!-- ## Citation
+## Citation
 
-If you find this work useful, please cite:
+If you find this work useful, please kindly give it a star and cite:
 
 ```bibtex
-
-``` -->
+@misc{ye2026mce,
+    title={Meta Context Engineering via Agentic Skill Evolution},
+    author={Haoran Ye and Xuning He and Vincent Arak and Haonan Dong and Guojie Song},
+    year={2026},
+    eprint={2601.21557},
+    archivePrefix={arXiv},
+    primaryClass={cs.AI},
+    url={https://arxiv.org/abs/2601.21557},
+    note={Code available at \url{https://github.com/metaevo-ai/meta-context-engineering}},
+}
+```
 
 ## License
 
