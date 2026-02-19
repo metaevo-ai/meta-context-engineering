@@ -11,7 +11,7 @@
   <img src="assets/cartoon.png" width="100%" alt="MCE Concept"/>
 </p>
 
-This repository accompanies the paper [Meta Context Engineering via Agentic Skill Evolution](https://arxiv.org/abs/2501.21557).
+This repository accompanies the paper [Meta Context Engineering via Agentic Skill Evolution](https://arxiv.org/abs/2601.21557).
 **Meta Context Engineering (MCE)** is a bi-level agentic framework that co-evolves *context engineering skills* and *context artifacts*, replacing rigid CE heuristics with learnable skills that automatically discover optimal context representations and optimization procedures.
 
 ## Key Results
