@@ -1,4 +1,4 @@
-# Meta Context Engineering via Agentic Skill Evolution
+# [ICML 2026] Meta Context Engineering via Agentic Skill Evolution
 
 > **Superseding Static Harnesses with Learnable Skills for Context Optimization**
 
